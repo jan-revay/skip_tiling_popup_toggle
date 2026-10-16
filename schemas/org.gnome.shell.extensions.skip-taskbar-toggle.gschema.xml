@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.skip-taskbar-toggle"
+          path="/org/gnome/shell/extensions/skip-taskbar-toggle/">
+    <key name="toggle-skip-taskbar" type="as">
+      <default><![CDATA[['<Control><Super><Alt><Shift>s']]]></default>
+      <summary>Toggle skip_taskbar on the focused window</summary>
+    </key>
+  </schema>
+</schemalist>
