@@ -46,9 +46,12 @@ export default class SkipTaskbarToggleExtension extends Extension {
         // Let JS listeners (taskbars, tiling extensions) re-read the property.
         win.notify('skip-taskbar');
 
+        let title = win.title ?? '';
+        if (title.length > 25)
+            title = `${title.slice(0, 24)}…`;
         const label = overridden
-            ? `Skip taskbar OFF: ${win.title ?? ''}`
-            : `Skip taskbar ON: ${win.title ?? ''}`;
+            ? `Skip taskbar OFF: ${title}`
+            : `Skip taskbar ON: ${title}`;
         Main.osdWindowManager.show(-1,
             Gio.ThemedIcon.new(overridden ? 'view-reveal-symbolic' : 'view-conceal-symbolic'),
             label, null);
