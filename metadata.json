@@ -1,0 +1,7 @@
+{
+  "uuid": "skip-taskbar-toggle@jrevay",
+  "name": "Skip Taskbar Toggle",
+  "description": "Toggle a JS-side skip_taskbar override on the focused window with Ctrl+Super+Alt+Shift+S.",
+  "shell-version": ["45", "46", "47", "48"],
+  "settings-schema": "org.gnome.shell.extensions.skip-taskbar-toggle"
+}
